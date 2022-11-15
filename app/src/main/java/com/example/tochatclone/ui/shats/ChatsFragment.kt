@@ -6,10 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tochatclone.data.local.UserHelper
 import com.example.tochatclone.databinding.FragmentChatsBinding
 import com.example.tochatclone.domain.ext.gone
 import com.example.tochatclone.domain.ext.show
+import com.example.tochatclone.ui.dashboard.DashBoardFragmentDirections
+import com.example.tochatclone.ui.selection.UserSelectionFragmentDirections
 
 
 class ChatsFragment : Fragment() {
@@ -18,7 +21,8 @@ class ChatsFragment : Fragment() {
    private val binding: FragmentChatsBinding get() = mBinding!!
 
    private val chatsListAdapter = ChatsListAdapter(){
-      Toast.makeText(requireContext(), it.chatName, Toast.LENGTH_SHORT).show()
+      val action = DashBoardFragmentDirections.actionDashBoardFragmentToMessageFragment(messageId = it.id)
+      findNavController().navigate(action)
    }
 
    override fun onCreateView(
