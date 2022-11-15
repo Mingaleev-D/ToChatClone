@@ -7,4 +7,9 @@
   <color name="white_chocolate">#ECE5DD</color>
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
+  <color name="message_green">#c4d6ac</color>
+  <color name="textOnGreen">#F1FFFC</color>
+  <color name="textDate">#DBF0EC</color>
+  <color name="textDateLight">#A3A3A3</color>
+  <color name="textOnLight">#303130</color>
 </resources>
