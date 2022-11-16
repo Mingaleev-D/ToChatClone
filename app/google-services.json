@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "111265076774",
+    "project_id": "tochatclone",
+    "storage_bucket": "tochatclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111265076774:android:17892d82d5860027b538e7",
+        "android_client_info": {
+          "package_name": "com.example.tochatclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111265076774-vsieg9dmc0u18i1vvie0srcl8itnpiu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tochatclone",
+            "certificate_hash": "3b6ab0debb04b764b76cf4883ee7ccea46e966be"
+          }
+        },
+        {
+          "client_id": "111265076774-9rje1pfo52nmjob6n9cm0beqq212cn53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8FKd_Z81cojE7egPHUw-HY6Gptj_auf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111265076774-9rje1pfo52nmjob6n9cm0beqq212cn53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

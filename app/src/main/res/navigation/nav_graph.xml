@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/userSelectionFragment">
+
+  <fragment
+    android:id="@+id/userSelectionFragment"
+    android:name="com.example.tochatclone.ui.selection.UserSelectionFragment"
+    android:label="fragment_user_selection"
+    tools:layout="@layout/fragment_user_selection" >
+    <action
+      android:id="@+id/action_userSelectionFragment_to_dashBoardFragment"
+      app:destination="@id/dashBoardFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/dashBoardFragment"
+    android:name="com.example.tochatclone.ui.dashboard.DashBoardFragment"
+    android:label="fragment_dash_board"
+    tools:layout="@layout/fragment_dash_board" >
+    <argument
+      android:name="userId"
+      app:argType="string"
+      app:nullable="false"/>
+    <action
+      android:id="@+id/action_dashBoardFragment_to_messageFragment"
+      app:destination="@id/messageFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/messageFragment"
+    android:name="com.example.tochatclone.ui.message.MessageFragment"
+    android:label="fragment_message"
+    tools:layout="@layout/fragment_message" >
+    <argument
+      android:name="userId"
+      app:argType="string"
+      app:nullable="false"/>
+    <argument
+      android:name="messageId"
+      app:argType="string"
+      app:nullable="false"/>
+  </fragment>
+</navigation>
