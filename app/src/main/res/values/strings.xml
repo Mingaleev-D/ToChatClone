@@ -9,4 +9,5 @@
   <string name="social">Social</string>
   <string name="empty_chats">Empty chats</string>
   <string name="online">online</string>
+  <string name="no_message">No message</string>
 </resources>

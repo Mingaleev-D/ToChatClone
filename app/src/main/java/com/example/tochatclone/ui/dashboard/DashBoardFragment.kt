@@ -9,8 +9,9 @@ import androidx.navigation.fragment.navArgs
 import com.example.tochatclone.R
 import com.example.tochatclone.databinding.FragmentDashBoardBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DashBoardFragment : Fragment() {
 
    private var mBinding: FragmentDashBoardBinding? = null
@@ -33,7 +34,7 @@ class DashBoardFragment : Fragment() {
 
    private fun setupViewpager() {
       binding.dashViewPager.apply {
-         adapter = DashPagerAdapter(this@DashBoardFragment)
+         adapter = DashPagerAdapter(this@DashBoardFragment,userId = args.userId)
       }
       TabLayoutMediator(binding.dashboardTabLayout, binding.dashViewPager) { tab, position ->
          tab.text = when(position) {

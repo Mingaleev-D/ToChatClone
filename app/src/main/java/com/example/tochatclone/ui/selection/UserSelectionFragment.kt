@@ -10,8 +10,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.tochatclone.data.local.UserHelper
 import com.example.tochatclone.databinding.FragmentUserSelectionBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class UserSelectionFragment : Fragment() {
 
    private var mBinding: FragmentUserSelectionBinding? = null

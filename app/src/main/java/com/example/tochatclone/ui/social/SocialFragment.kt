@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.tochatclone.databinding.FragmentSocialBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class SocialFragment : Fragment() {
 
    private var mBinding: FragmentSocialBinding? = null
